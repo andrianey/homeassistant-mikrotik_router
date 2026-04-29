@@ -4,7 +4,6 @@ import logging
 import ssl
 from time import time
 from threading import Lock
-from voluptuous import Optional
 from .const import (
     DEFAULT_LOGIN_METHOD,
     DEFAULT_ENCODING,

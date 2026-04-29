@@ -1,0 +1,13 @@
+line-length = 120
+target-version = "py313"
+
+[lint]
+select = ["E", "F", "W", "I"]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+    "E402",  # module level import not at top of file
+    "E741",  # ambiguous variable name
+]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]
