@@ -11,6 +11,7 @@ from .const import (
 )
 
 import librouteros
+from librouteros.login import plain, token
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -117,7 +118,7 @@ class MikrotikAPI:
 
         kwargs = {
             "encoding": self._encoding,
-            "login_methods": self._login_method,
+            "login_method": plain if self._login_method == "plain" else token,
             "port": self._port,
         }
 
