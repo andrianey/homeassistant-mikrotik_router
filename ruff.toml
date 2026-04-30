@@ -7,6 +7,8 @@ ignore = [
     "E501",  # line too long (handled by formatter)
     "E402",  # module level import not at top of file
     "E741",  # ambiguous variable name
+    "F401",  # unused imports (legacy integration patterns)
+    "I001",  # import sorting (legacy ordering)
 ]
 
 [lint.per-file-ignores]

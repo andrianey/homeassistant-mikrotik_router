@@ -173,7 +173,7 @@ async def fetch_changelog(session, version: str) -> str:
             if response.status == 200:
                 text = await response.text()
                 return text.replace("*) ", "- ")
-    except Exception as e:
+    except Exception:
         pass
     return ""
 
